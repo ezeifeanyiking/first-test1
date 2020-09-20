@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+}
+
+.menu li {
+  margin-top: 20px;
+}
+
+.menu-item a {
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 10px 15px;
+  justify-content: space-between;
+}
+
+.menu-item a:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+}
+
+.container {
+  display: grid;
+  grid-gap: 15px;
+  height: 90vh;
+  grid-template-areas:
+    "header header header"
+    "aside main-section main-section"
+    "aside footer footer";
+  grid-template-rows: 70px 1fr 70px;
+  grid-template-columns: 200px 1fr;
+  margin: 20px 150px;
+}
+
+.header {
+  grid-area: header;
+  background-color: white;
+}
+
+.complete {
+  grid-area: complete;
+  font-size: 13px;
+  border: 2px solid green;
+  text-transform: uppercase;
+  padding: 4px;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: white;
+}
+
+.main-section {
+  grid-area: main-section;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: white;
+  margin-left: 10px;
+  padding: 25px 0 0 20px;
+  display: flex;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+input[type="button"] {
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input[type="button"]:hover {
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+
+textarea,
+select {
+  border: 1px solid blue;
+  color: blue;
+  border-radius: 5px;
+}
+
+select {
+  padding: 5px 5px;
+  text-transform: uppercase;
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+}
+
+th,
+td {
+  height: 30px;
+  border-bottom: 1px solid grey;
+  text-align: right;
+  padding: 5px;
+}
+
+h1 {
+  margin: 20px 0 0px 40px;
+  font-size: 20px;
+}
+
+th {
+  text-align: left;
+  text-transform: capitalize;
+  color: grey;
+}
+
+.export {
+  margin-left: auto;
+  align-items: center;
+}
