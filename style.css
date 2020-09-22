@@ -40,7 +40,7 @@ body {
     "aside footer footer";
   grid-template-rows: 70px 1fr 70px;
   grid-template-columns: 200px 1fr;
-  margin: 20px 150px;
+  margin: 10px 100px;
 }
 
 .header {
@@ -137,4 +137,16 @@ th {
 .export {
   margin-left: auto;
   align-items: center;
+}
+@media only screen and (max-width: 980px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "main"
+      "aside"
+      "main-section"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto 1fr;
+  }
 }
